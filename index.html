@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
     <title>HYPER UNIVERSITY | Master Your Execution</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
@@ -475,6 +475,7 @@
 
         html {
             scroll-behavior: smooth;
+            overflow-x: hidden;
         }
 
 
@@ -567,7 +568,7 @@
     </style>
 </head>
 
-<body class="bg-background text-on-background selection:bg-primary/30">
+<body class="bg-background text-on-background selection:bg-primary/30 overflow-x-hidden">
 
     <nav id="mainNav" class="fixed top-0 w-full z-50 bg-[#0c1322]/60 backdrop-blur-xl shadow-2xl shadow-black/40">
         <div class="nav-inner flex justify-between items-center px-8 py-4 max-w-[1440px] mx-auto">
@@ -662,19 +663,19 @@
                         ecosystem designed to rewire your habits, sharpen your execution, and surround you with people
                         who refuse to settle.</p>
                 </div>
-                <div class="max-w-4xl mx-auto">
+                <div class="max-w-sm mx-auto">
                     <div class="relative group reveal-scale">
                         <div
                             class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-700">
                         </div>
                         <div
-                            class="relative rounded-xl overflow-hidden border border-outline-variant/20 bg-surface-container">
-                            <div class="relative w-full" style="padding-bottom: 56.25%;">
-                                <iframe class="absolute inset-0 w-full h-full"
+                            class="relative rounded-xl overflow-hidden border border-outline-variant/20 bg-surface-container shadow-2xl">
+                            <div class="relative w-full" style="aspect-ratio: 9/16;">
+                                <iframe class="absolute inset-0 w-full h-full rounded-xl"
                                     src="https://drive.google.com/file/d/1ADRbpchfSwjhwynnsruXrbAze5ajPG2g/preview"
                                     title="What is Hyper University" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                    allowfullscreen>
                                 </iframe>
                             </div>
                         </div>
@@ -732,7 +733,8 @@
                             <p class="text-on-surface-variant text-xs leading-relaxed">Surround yourself with architects
                                 of their own
                                 reality, not victims of their environment.</p>
-                    `    </div>
+                            `
+                        </div>
 
                         <div
                             class="card-hover reveal stagger-4 p-6 bg-surface-container border border-outline-variant/10 rounded-xl hover:bg-surface-container-high transition-all">
@@ -839,7 +841,7 @@
         <div class="glow-line"></div>
         <section id="testimonials" class="py-20 bg-surface-container-low relative overflow-hidden">
 
-            <div class="absolute inset-0 opacity-5 pointer-events-https://rzp.io/rzp/0gYDPD5/">
+            <div class="absolute inset-0 opacity-5 pointer-events-none">
                 <div class="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-[150px]"></div>
                 <div class="absolute bottom-20 right-10 w-96 h-96 bg-secondary-container rounded-full blur-[180px]">
                 </div>
@@ -1469,7 +1471,7 @@
                     that changes everything?
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="none"
+                    <a href="https://rzp.io/rzp/0gYDPD5"
                         class="cta-pulse reveal stagger-2 bg-gradient-to-r from-primary to-primary-container text-on-primary text-lg font-headline font-bold uppercase px-12 py-4 rounded-xl hover:scale-110 transition-transform shadow-2xl shadow-primary/40 inline-block">
                         Join Now
                     </a>
